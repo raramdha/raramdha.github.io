@@ -1,6 +1,181 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <script>
+                    // Measures product impressions and also tracks a standard
+                    // pageview for the tag configuration.
+                    // Product impressions are sent by pushing an impressions object
+                    // containing one or more impressionFieldObjects.
+                    dataLayer.push({
+                      'ecommerce': {
+                        'currencyCode': 'IDR',                       // Local currency is optional.
+                        'impressions': [
+                         {
+                           'name': 'Gradient Hoodie',       // Name or ID is required.
+                           'id': '0001',
+                           'price': '200000',
+                           'category': 'Outerwear',
+                           'list': 'Catalog Page',
+                           'position': 1
+                         },
+                         {
+                           'name': 'Skinny Jeans',       // Name or ID is required.
+                           'id': '0002',
+                           'price': '300000',
+                           'category': 'Bottomwear',
+                           'list': 'Catalog Page',
+                           'position': 2
+                         },
+                         {
+                           'name': 'Blazer',       // Name or ID is required.
+                           'id': '0003',
+                           'price': '280000',
+                           'category': 'Outerwear',
+                           'list': 'Catalog Page',
+                           'position': 3
+                         },
+                         {
+                           'name': 'Black Dress',       // Name or ID is required.
+                           'id': '0004',
+                           'price': '850000',
+                           'category': 'Dresses',
+                           'list': 'Catalog Page',
+                           'position': 4
+                         },
+                         {
+                           'name': 'Flannel Shirt',       // Name or ID is required.
+                           'id': '0005',
+                           'price': '180000',
+                           'category': 'Tops',
+                           'list': 'Catalog Page',
+                           'position': 5
+                         },
+                         {
+                           'name': 'Striped Blouse',       // Name or ID is required.
+                           'id': '0006',
+                           'price': '150000',
+                           'category': 'Tops',
+                           'list': 'Catalog Page',
+                           'position': 6
+                         },
+                         {
+                           'name': 'Skirt',       // Name or ID is required.
+                           'id': '0007',
+                           'price': '170000',
+                           'category': 'Bottomwear',
+                           'list': 'Catalog Page',
+                           'position': 7
+                         },
+                         {
+                           'name': 'Floral Dress',       // Name or ID is required.
+                           'id': '0008',
+                           'price': '500000',
+                           'category': 'Dresses',
+                           'list': 'Catalog Page',
+                           'position': 8
+                         },
+                         {
+                           'name': 'Culottes',       // Name or ID is required.
+                           'id': '0009',
+                           'price': '150000',
+                           'category': 'Bottomwear',
+                           'list': 'Catalog Page',
+                           'position': 9
+                         }]
+                      }
+                    });
+
+                    dataLayer.push({
+                        "event":"EEproductClick",
+                        "ecommerce": {
+                            "currencyCode":"IDR",
+                            "click": {
+                            "actionField": {"list":"catalog" },
+                            "products": [
+                         {
+                           'name': 'Gradient Hoodie',       // Name or ID is required.
+                           'id': '0001',
+                           'price': '200000',
+                           'category': 'Outerwear',
+                           'list': 'Catalog Page',
+                           'position': '1'
+                         },
+                         {
+                           'name': 'Skinny Jeans',       // Name or ID is required.
+                           'id': '0002',
+                           'price': '300000',
+                           'category': 'Bottomwear',
+                           'list': 'Catalog Page',
+                           'position': '2'
+                         },
+                         {
+                           'name': 'Blazer',       // Name or ID is required.
+                           'id': '0003',
+                           'price': '280000',
+                           'category': 'Outerwear',
+                           'list': 'Catalog Page',
+                           'position': '3'
+                         },
+                         {
+                           'name': 'Black Dress',       // Name or ID is required.
+                           'id': '0004',
+                           'price': '850000',
+                           'category': 'Dresses',
+                           'list': 'Catalog Page',
+                           'position': '4'
+                         },
+                         {
+                           'name': 'Flannel Shirt',       // Name or ID is required.
+                           'id': '0005',
+                           'price': '180000',
+                           'category': 'Tops',
+                           'list': 'Catalog Page',
+                           'position': '5'
+                         },
+                         {
+                           'name': 'Striped Blouse',       // Name or ID is required.
+                           'id': '0006',
+                           'price': '150000',
+                           'category': 'Tops',
+                           'list': 'Catalog Page',
+                           'position': 6
+                         },
+                         {
+                           'name': 'Skirt',       // Name or ID is required.
+                           'id': '0007',
+                           'price': '170000',
+                           'category': 'Bottomwear',
+                           'list': 'Catalog Page',
+                           'position': 7
+                         },
+                         {
+                           'name': 'Floral Dress',       // Name or ID is required.
+                           'id': '0008',
+                           'price': '500000',
+                           'category': 'Dresses',
+                           'list': 'Catalog Page',
+                           'position': 8
+                         },
+                         {
+                           'name': 'Culottes',       // Name or ID is required.
+                           'id': '0009',
+                           'price': '150000',
+                           'category': 'Bottomwear',
+                           'list': 'Catalog Page',
+                           'position': 9
+                         }][{
+                                "id":"9bf1d",
+                                "name":"Boss T-Shirt",
+                                "price":"37.00",
+                                "brand":"Converse",
+                                "category":"Men/Clothing/T-Shirts",
+                                "position":"2"
+                            }]
+                            }
+                        }
+                    });
+        </script>
+
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -105,7 +280,7 @@
                                     <img src="https://cdn.shopify.com/s/files/1/0085/8977/0812/products/Gradient_Hoodie_Front_1024x1024.png?v=1552322619" width="300" height ="300" alt="" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">
-                                            Hoodie
+                                            Gradient Hoodie
                                         </h5>
                                         <p class="text-grey">Outerwear</p>
                                         <p class="text-blue">IDR 200000</p>
